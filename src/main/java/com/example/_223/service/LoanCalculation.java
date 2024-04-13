@@ -19,12 +19,12 @@ public class LoanCalculation {
     @Autowired
     private CarService carService;
 
-    public boolean isApprovedLoan(Integer incomeUser, Integer priceCar) {
+    private boolean isApprovedLoan(Integer incomeUser, Integer priceCar) {
         return incomeUser > loanProperties.getMinimalIncome() ||
                 priceCar > loanProperties.getPriceCar();
     }
 
-    public double calculateMaxAmountLoan(Integer incomeUser, Integer priceCar) {
+    private double calculateMaxAmountLoan(Integer incomeUser, Integer priceCar) {
         double halfAnnualIncome = incomeUser * 6.0;
         double thirtyPercentCostCar = priceCar * 0.3;
         return Math.max(halfAnnualIncome, thirtyPercentCostCar);

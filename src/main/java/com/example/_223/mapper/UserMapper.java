@@ -3,6 +3,7 @@ package com.example._223.mapper;
 
 import com.example._223.model.entity.User;
 import com.example.starter.incomeclient.model.UserDTO;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service

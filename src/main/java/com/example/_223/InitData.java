@@ -24,7 +24,7 @@ public class InitData {
     @Autowired
     private UserMapper userMapper;
 
-    public List<User> getUserWithCar() {
+    private List<User> getUserWithCar() {
         return incomeClient.getClient().stream()
                 .map(userMapper::toUser)
                 .peek(userService::setCarForUser)
