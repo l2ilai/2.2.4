@@ -2,8 +2,9 @@ package com.example._223;
 
 import com.example._223.model.entity.User;
 import com.example._223.mapper.UserMapper;
-import com.example._223.service.IncomeClient;
+
 import com.example._223.service.UserService;
+import com.example.starter.incomeclient.service.IncomeClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.event.EventListener;

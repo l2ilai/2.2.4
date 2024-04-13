@@ -1,6 +1,8 @@
 package com.example._223.service;
 
 import com.example._223.properties.LoanProperties;
+
+import com.example.starter.incomeclient.service.IncomeClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
